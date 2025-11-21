@@ -16,7 +16,7 @@ jobs:
       - name: Run System Tests
         run: dotnet test --filter TestCategory=System --no-build
       - name: Upload System Test Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: system-test-results
           path: TestResults
