@@ -1,7 +1,7 @@
 name: Unit Tests
-
 on:
   workflow_call:
+  
 jobs:
   unit-tests:
     runs-on: ubuntu-latest
@@ -14,6 +14,9 @@ jobs:
         with:
             dotnet-version: '8.0.x'
 
+      - name: Ensure TestResults folder exists
+        run: mkdir -p TestResults
+        
       - name: Run Unit Tests
         run: dotnet test Calculator_Application.sln --filter "Category=Unit" --logger "trx;LogFileName=TestResults.trx" --results-directory TestResults
 
