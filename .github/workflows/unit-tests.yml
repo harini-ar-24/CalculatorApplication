@@ -15,7 +15,7 @@ jobs:
             dotnet-version: '8.0.x'
 
       - name: Run Unit Tests
-        run: dotnet test Calculator_Application.sln --filter Category=Unit --no-build --verbosity normal
+        run: dotnet test Calculator_Application.sln --filter Category=Unit --verbosity normal
 
       - name: Upload Unit Test Results
         uses: actions/upload-artifact@v4
