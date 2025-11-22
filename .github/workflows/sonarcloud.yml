@@ -1,34 +1,42 @@
-name: Reusable - SonarCloud Analysis
+name: SonarCloud Analysis
+
 on:
   workflow_call:
+
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Install .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: "8.0.x"
-      - name: Install Sonar Scanner
-        run: dotnet tool install --global dotnet-sonarscanner
-      - name: SonarCloud Begin
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          dotnet-sonarscanner begin \
-            /k:"harini-ar-24_CalculatorApplication" \
-            /o:"harini-ar-24" \
-            /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
-            /d:sonar.host.url="https://sonarcloud.io"
-      - name: Build Solution
-        run: dotnet build --no-restore
-      - name: SonarCloud End
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          dotnet-sonarscanner end \
-            /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Install dotnet-coverage
+      run: dotnet tool install --global dotnet-coverage
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Test with Coverage
+      run: |
+        dotnet-coverage collect "dotnet test --configuration Release" \
+        -f xml -o "coverage.xml"
+
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@v2
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        projectBaseDir: .
+        args: >
+          -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+          -Dsonar.organization=${{ secrets.SONAR_ORG }}
+          -Dsonar.host.url=https://sonarcloud.io
+          -Dsonar.cs.opencover.reportsPaths=coverage.xml
