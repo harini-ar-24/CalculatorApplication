@@ -31,11 +31,12 @@ jobs:
 
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v2
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         projectBaseDir: .
         args: >
           -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
           -Dsonar.organization=${{ secrets.SONAR_ORG }}
           -Dsonar.host.url=https://sonarcloud.io
-          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
           -Dsonar.cs.opencover.reportsPaths=coverage.xml
