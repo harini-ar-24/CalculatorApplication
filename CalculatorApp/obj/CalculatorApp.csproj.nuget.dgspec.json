@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CSharp\\MyCalculator\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj": {}
+    "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj": {}
   },
   "projects": {
-    "D:\\CSharp\\MyCalculator\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj": {
+    "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CSharp\\MyCalculator\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj",
+        "projectUniqueName": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj",
         "projectName": "CalculatorApp",
-        "projectPath": "D:\\CSharp\\MyCalculator\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\CSharp\\MyCalculator\\CalculatorApplication\\CalculatorApp\\obj\\",
+        "projectPath": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj",
+        "packagesPath": "C:\\Users\\40045607\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\40045607\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
