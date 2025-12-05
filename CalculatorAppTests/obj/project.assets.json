@@ -7668,11 +7668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorAppTests\\CalculatorAppTests.csproj",
+      "projectUniqueName": "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorAppTests\\CalculatorAppTests.csproj",
       "projectName": "CalculatorAppTests",
-      "projectPath": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorAppTests\\CalculatorAppTests.csproj",
+      "projectPath": "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorAppTests\\CalculatorAppTests.csproj",
       "packagesPath": "C:\\Users\\40045607\\.nuget\\packages\\",
-      "outputPath": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorAppTests\\obj\\",
+      "outputPath": "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorAppTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7693,8 +7693,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj": {
-              "projectPath": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj"
+            "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj": {
+              "projectPath": "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj"
             }
           }
         }

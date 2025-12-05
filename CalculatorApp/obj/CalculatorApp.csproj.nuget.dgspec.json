@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj": {}
+    "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj": {}
   },
   "projects": {
-    "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj": {
+    "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj",
+        "projectUniqueName": "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj",
         "projectName": "CalculatorApp",
-        "projectPath": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\CalculatorApp.csproj",
+        "projectPath": "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorApp\\CalculatorApp.csproj",
         "packagesPath": "C:\\Users\\40045607\\.nuget\\packages\\",
-        "outputPath": "C:\\WorkingFolder\\Competency_Training\\Calculator_Application\\CalculatorApp\\obj\\",
+        "outputPath": "C:\\WorkingFolder\\PersonalRepo\\CalculatorApplication\\CalculatorApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
