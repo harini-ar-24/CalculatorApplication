@@ -1,4 +1,3 @@
-
 name: Calculator App CI
 
 on:
@@ -7,7 +6,7 @@ on:
       - main
   pull_request:
     branches:
-      - develop
+      - developer
       # - develop1
       # - 'feature1/*'
       # - main
